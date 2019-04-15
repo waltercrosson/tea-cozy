@@ -21,33 +21,47 @@ header{
   height: 69px;
   border-bottom: 1px solid seashell;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   background-color: black;
   z-index: 1;
-
+  align-items: center;
 
 }
 
-header .logo{
-  height: 50px;
+.logo{
+
   margin-left: 10px;
-  color: blue;
 }
 
-.main-nav{
+
+.main-nav {
   margin-left: auto;
-
+  padding-right: 20px;
+  margin-right: 10px;
 }
+
+header img{
+  height: 50px;
+}
+
 
 a {
   color: seashell;
+  margin-right: 10px;
+
 }
 
 
 #mission{
   display: flex;
-  justify-content: center;
   width: 1000px;
+  align-items: center;
+  margin: 0,auto;
+
+
+
 }
 
 #mission .image-content{
@@ -63,13 +77,15 @@ a {
 
 .text-content{
 
-margin-top: 350px;
+margin-top: 300px;
 margin-bottom: auto;
 background-color: black;
 text-align: center;
 justify-content: center;
 align-content: center;
 width:1000px;
+padding:1px;
+
 
 }
 
@@ -77,19 +93,83 @@ width:1000px;
 #tea-of-the-month{
 display: flex;
 width: 1000px;
+margin: auto;
 align-content:center;
 justify-content: center;
+text-align: center;
+}
+
+.image-container{
+  width:1000px;
+  margin: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
 
 }
 
-
-.image-content{
-  display:flex;
-
+.container-items{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+justify-content: center;
+align-content: center;
+align-items: center;
+margin: 20px;
 }
+
 
 .image-content img{
-
   width: 300px;
   height: 200px;
+  display: block;
+  margin: 10px;
+
+}
+
+
+
+/* locations */
+
+#locations-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  width: 1200px;
+  height: 500px;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+
+}
+
+#locations{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+
+}
+
+
+#location{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  background-color: black;
+
+}
+
+
+
+
+/* Contact */
+
+#contact{
+  height: 200px;
+}
+
+
+#copywright{
+  text-align: left;
+
 }
